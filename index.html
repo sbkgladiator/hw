@@ -1,92 +1,147 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
-<html>
+<!DOCTYPE html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Home</title>
+<link href="styles/Bihomedic/home.css" rel="stylesheet" type="text/css" media="all" />
+<link href="bihomed_files/css3menu1/styles.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="styles/console/codemirror.css">
+<link rel="stylesheet" href="styles/console/console.css">
+<link rel="stylesheet" href="styles/console/show-hint.css">
+<script src="js/console/codemirror.js"></script>
+<script src="js/console/console_script.js"></script>
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+<!--Javascript and coffeescript modes-->
+<script src="js/console/javascript.js"></script>
+<script src="js/console/coffeescript.js"></script>
+<script src="js/console/loadmode.js"></script>
+<script src="js/console/coffee-script.js"></script>
 
-  <title>webvisual</title>
-  <meta name="description" content="cartella di appoggio">
+<!--Hint-->
+<script src="js/console/show-hint.js"></script>
+<script src="js/console/javascript-hint.js"></script>
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/backbone.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+<script type="text/javascript" src="js/kinetic-v4.4.3.min.js"></script>
+<script type="text/javascript" src="http:////ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- script plasm -->
+<script src="support/jquery.js"></script>
+<script src="support/mustache.js"></script>
+<script src="support/numeric.js"></script>
+<script src="support/director.js"></script>
+<script src="support/three.js"></script>
+<script src="support/three-detector.js"></script>
+<script src="support/three-frame.js"></script>
+<script src="support/three-stats.js"></script>
+<script src="support/three-trackball.js"></script>
+<script src="node_modules/simplexn.js/lib/simplexn.js"></script>
+<script src="node_modules/f.js/lib/f.js"></script>
+<script src="lib/plasm.js"></script>
+<script src="lib/plasm-fun.js"></script>
+<script src="lib/plasm-env.js"></script>
 </head>
-
-<body>
-
-  <div class="wrapper">
-    <header>
-      <h1 class="title">webvisual</h1>
-    </header>
-    <div id="container">
-      <p class="tagline">cartella di appoggio</p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/sbkgladiator/hw/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/sbkgladiator/hw/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/sbkgladiator/hw" class="code">View webvisual on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </article>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-      <p><a href="https://github.com/sbkgladiator" class="avatar"><img src="https://secure.gravatar.com/avatar/c4bdaa821825da6b270be7be4fe91429?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a> <a href="https://github.com/sbkgladiator">sbkgladiator</a> maintains <a href="https://github.com/sbkgladiator/hw">webvisual</a></p>
+<body onLoad="showmolecole()">
+<!-- header web-index -->
+<div id="header-wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a>Lar-Biomed app</a></h1>
+		</div>
+		<nav>
+<ul id="css3menu1" class="topmenu">
+	<li class="topfirst"><a href="#" style="height:48px;line-height:48px;"><span><img src="bihomed_files/css3menu1/samples2.png" alt=""/>MENU'</span></a>
+	<ul>
+		<li class="subfirst"><a href="#" >HOME</a></li>
+		<li><a href="about.html">ABOUT</a></li>
+		<li><a href="#">CONTACT</a></li>
+	</ul>
+	<li class="toplast"><a href="#" style="height:48px;line-height:48px;"><span><img src="bihomed_files/css3menu1/bservice.png" alt=""/>PROJECTS</span></a>
 
 
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/sbkgladiator/hw/tarball/master" class="tar">tar</a><a href="https://github.com/sbkgladiator/hw/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
+	<ul>
+		<li class="subfirst"><a id="index" href="Web-index.html">WEB-INDEX</a></li>
+		<li><a id="dicom"href="Web-dicom.html">WEB-DICOM</a></li>
+		<li><a id="lar" href="Web-lar.html">WEB-LAR</a></li>
 
-  
-</body>
+	</ul>
+</ul>
+		</nav>
+	</div>
+</div>
+<!-- fine header -->
+
+<!-- inizio context -->
+
+
+<div id="wrapper">
+	<div id="plasm"><!-- qui ti crea plasm.js al caricamento della pagina -->
+
+</div id="prima">
+
+<p align="center">&nbsp;</p>
+<ul>
+			<div id="tab" style="display:inline" >
+			<p style="float:left">
+			<input id="showConsole" type="button" value="OpenConsole" onclick="toggleConsolehome();">
+			</p>
+			<p align="center">
+			<a href="Web-index.html" class="buttons">Web-Index</a>
+			<a href="Web-dicom.html" class="buttons">Web-Dicom</a>
+			<a href="Web-lar.html" class="buttons">Web-Lar</a>
+			</p>
+
+	</ul>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+
+</div></div>
+
+<!-- fine context -->
+		<div id="consl" style="display:none" >
+			<ul>
+		<p style="float:left">
+		<input id="showConsole" type="button" value="CloseConsole" onclick="toggleConsolehome();">
+		<a href="Web-index.html" class="buttons">Web-Index</a>
+		<a href="Web-dicom.html" class="buttons">Web-Dicom</a>
+		<a href="Web-lar.html" class="buttons">Web-Lar</a>
+		</p>
+
+			<form><textarea id="code" name="code">
+				//Write Here
+			</textarea></form>
+
+			<input id="exec" type="button" value="Exec" onclick="exec();"/>
+			<input id="coffeeScriptButton" type="button" value="CoffeeScript" onclick="coffeeMode();"/>
+			<input id="javaScriptButton" type="button" value="JavaScript" style="display:none" onclick="javascriptMode();">
+
+			<input id="verify" type="button" value="ModeChecker" onclick="test();"/>
+		</div>
+
+
+
+
+
+
+
+
+</script>
+ <script>
+                /*Testing var*/
+    var csb = document.getElementById("coffeeScriptButton");
+    var jsb = document.getElementById("javaScriptButton");
+
+            /*Loading CodeMirror on existing textArea*/
+
+            var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+                mode: "javascript",
+                lineNumbers: true,
+                extraKeys: {"Cmd-Space": "autocomplete"},   //extrakey for autocomplete
+                extraKeys: {"Ctrl-Space": "autocomplete"},
+                tabMode: "indent"
+            });
+
+        </script>
+
+ </body>
 </html>
